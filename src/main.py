@@ -17,7 +17,7 @@ app = FastAPI()
 def generate_key():
     return "".join(
         random.SystemRandom().choice(string.ascii_lowercase + string.digits)
-        for _ in range(16)
+        for _ in range(32)
     )
 
 
